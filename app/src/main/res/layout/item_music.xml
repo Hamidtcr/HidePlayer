@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/very_dark_gray"
+    android:layout_marginTop="1.5dp"
+    android:layout_marginBottom="1.5dp"
+    app:strokeWidth="0dp"
+    android:outlineSpotShadowColor="@color/very_light_blue"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/igMusicItem"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:viewAspectRatio="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:overlayImage="@drawable/ic_music"
+        app:backgroundImage="@drawable/background_music"
+        />
+
+    <TextView
+        android:id="@+id/nameMusicItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Music Name"
+        android:textSize="18sp"
+        android:fontFamily="@font/hide_medium"
+        app:layout_constraintTop_toTopOf="@id/igMusicItem"
+        app:layout_constraintStart_toEndOf="@id/igMusicItem"
+        app:layout_constraintBottom_toTopOf="@id/singerMusicItem"
+        android:textColor="@color/white"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toStartOf="@id/igMoreMusicItem"
+        />
+
+    <TextView
+        android:id="@+id/singerMusicItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Singer Name"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/nameMusicItem"
+        app:layout_constraintBottom_toBottomOf="@id/igMusicItem"
+        app:layout_constraintStart_toEndOf="@id/igMusicItem"
+        android:textColor="@color/white"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toStartOf="@id/igMoreMusicItem"
+        />
+
+    <ImageView
+        android:id="@+id/igMoreMusicItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="true"
+        android:layout_margin="12dp"
+        app:srcCompat="@drawable/ic_more"
+        app:tint="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
