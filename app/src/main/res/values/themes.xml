@@ -5,6 +5,15 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
         <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/light_blue</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSurface">@color/very_light_blue</item>
+        <item name="colorOnSurface">@color/dark_blue</item>
+        <item name="colorSecondaryContainer">@color/light_blue</item>
+        <item name="colorPrimaryContainer">@color/very_light_blue</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
     </style>
 
     <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
@@ -17,4 +26,8 @@
 
 
     <style name="Theme.HidePlayer" parent="Base.Theme.HidePlayer" />
+
+
+
+
 </resources>
